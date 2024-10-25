@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shipwrecked64",
+	"version": "${version}",
+	"name": "shipwrecked64",
+	"description": "Shipwrecked64 Mod",
+	"authors": [
+		"Bumblebirb"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shipwrecked64/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.Shipwrecked64"
+		],
+		"fabric-datagen": [
+			"name.modid.Shipwrecked64DataGenerator"
+		],
+		"client": [
+			"name.modid.Shipwrecked64Client"
+		]
+	},
+	"mixins": [
+		"shipwrecked64.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
